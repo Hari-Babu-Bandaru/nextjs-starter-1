@@ -8,11 +8,15 @@ export async function POST(req: NextRequest) {
     start(controller) {
       endpoint.handleRequest({
         request: body,
-        stream: (s) => controller.enqueue(s),
-        end: () => controller.close(),
+        stream: (s) => {
+          controller.enqueue(s);
+          console.log(s);
+        },
+        end: () => {
+          controller.close();
+        },
       });
     },
   });
-
   return new NextResponse(stream);
 }

@@ -26,7 +26,7 @@ const Message = ({ msg }: { msg: RunHistory }) => {
 };
 
 export default function Chat({ id }: Props) {
-  const agent = new Agent("7bfdb069-6da6-4236-b54e-2fcb8a726644", client); // replace with your agent ID
+  const agent = new Agent("3989873c-2154-47ea-af3f-1e4303498ba4", client); // replace with your agent ID
   const [message, setMessage] = useState<string>("");
   const {
     messages,

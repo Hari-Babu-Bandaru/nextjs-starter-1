@@ -1,4 +1,6 @@
-import { Agent, Client } from "@scoopika/client";
+import { Client, Agent } from "@scoopika/client";
+
+// Add the tool to your agent
 
 // CLIENT ONLY USAGE
 
