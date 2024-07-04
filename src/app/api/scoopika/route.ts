@@ -10,7 +10,6 @@ export async function POST(req: NextRequest) {
         request: body,
         stream: (s) => {
           controller.enqueue(s);
-          console.log(s);
         },
         end: () => {
           controller.close();
